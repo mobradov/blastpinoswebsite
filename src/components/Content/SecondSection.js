@@ -3,7 +3,7 @@ import CosmicAngel from '../../../public/images/fellas/legendaries/CosmicAngel.p
 import CosmosOverlord from '../../../public/images/fellas/legendaries/CosmosOverlord.png';
 import DiamondMonster from '../../../public/images/fellas/legendaries/DiamondMonster.png';
 import ElectricalMadScientist from '../../../public/images/fellas/legendaries/ElectricalMadScientist.png';
-import KingOfKings from '../../../public/images/fellas/legendaries/KingOfKings.png';
+import KingOfKings from '../../../public/images/fellas/legendaries/KingofKings.png';
 import NeonRider from '../../../public/images/fellas/legendaries/NeonRider.png';
 import PepeFrog from '../../../public/images/fellas/legendaries/PepeFrog.png';
 import TheEtherKing from '../../../public/images/fellas/legendaries/TheEtherKing.png';
