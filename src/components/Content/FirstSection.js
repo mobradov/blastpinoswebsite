@@ -96,7 +96,7 @@ const FirstSection = () => {
                     Welcome to the
                 </div>
                 <div className="mt-4 space-y-2">
-                    {['Ether', 'Fellas', 'web', 'site'].map((word, i) => (
+                    {['Based', 'Fellas', 'web', 'site'].map((word, i) => (
                         <div
                             key={i}
                             className="font-righteous font-normal text-white text-[110px] leading-[110px] tracking-tighter flex-none"
@@ -141,10 +141,10 @@ const FirstSection = () => {
                     />
                 </div>
                 <p className="mt-8 custom-paragraph">
-                    We are a 74x74 pixel art project dropping this June on the
-                    Ethereum Blockchain. <br /> <br /> Explore a diverse range
+                    We are a 74x74 pixel art project dropping this August on the
+                    Base Layer 2 Chain. <br /> <br /> Explore a diverse range
                     of traits and combinations matched together seamlessly to
-                    deliver the best Ether Fellas possible.
+                    deliver the best Based Fellas possible.
                 </p>
             </section>
         </div>
