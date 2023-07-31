@@ -32,7 +32,7 @@ const Mint = () => {
                 <h1 className="custom-heading text-start">Mint</h1>
                 <p className="w-8/12 custom-paragraph">
                     Welcome to the mint section, we will be stealth dropping
-                    Ether Fellas, so you&apos;ll just have to wait around for
+                    Based Fellas, so you&apos;ll just have to wait around for
                     these buttons below to be live
                 </p>
 
