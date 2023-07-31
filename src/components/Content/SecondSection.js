@@ -26,7 +26,7 @@ const SecondSection = () => {
             <section className="flex flex-col items-start gap-6 w-1/2 mt-12">
                 <h1 className="custom-heading">The art</h1>
                 <p className="custom-paragraph w-9/12">
-                    Ether Fellas art was made over the course of 2 months, we
+                    Based Fellas art was made over the course of 2 months, we
                     have 15 different types coupled with 180+ traits and
                     millions of combinations. We have taken our time to perfect
                     each one. Many iterations were made to fix and perfect each
