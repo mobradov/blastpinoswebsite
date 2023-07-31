@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="flex items-center gap-8">
                 <div className="flex gap-4">
                     <SocialLink
-                        href="https://twitter.com/EtherFellas"
+                        href="https://twitter.com/BasedFellas"
                         icon={twitterIcon}
                         alt="Link to Ether Fellas on Twitter"
                     />
