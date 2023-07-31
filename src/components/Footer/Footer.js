@@ -15,12 +15,12 @@ const Footer = () => {
                 <span>
                     <Image src={headerIcon} alt="Logo" />
                 </span>
-                Ether Fellas
+                Based Fellas
             </div>
             <div className="flex items-center gap-8">
                 <div className="flex gap-4">
                     <SocialLink
-                        href="https://twitter.com/EtherFellas"
+                        href="https://twitter.com/BasedFellas"
                         icon={twitterIcon}
                         alt="Link to Ether Fellas on Twitter"
                     />
