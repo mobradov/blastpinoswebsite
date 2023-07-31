@@ -14,7 +14,7 @@ const Navbar = () => {
                 <span>
                     <Image src={headerIcon} alt="Ether Fellas Logo" />
                 </span>
-                Ether Fellas
+                Based Fellas
             </div>
             <div className="flex items-center gap-8">
                 <div className="flex gap-4">
