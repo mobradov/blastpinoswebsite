@@ -15,24 +15,24 @@ const Footer = () => {
                 <span>
                     <Image src={headerIcon} alt="Logo" />
                 </span>
-                Based Fellas
+                Blast Pinos
             </div>
             <div className="flex items-center gap-8">
                 <div className="flex gap-4">
-                    <SocialLink
-                        href="https://twitter.com/BasedFellas"
+                <SocialLink
+                        href="https://twitter.com/BlastPinosNFT"
                         icon={twitterIcon}
-                        alt="Link to Ether Fellas on Twitter"
+                        alt="Link to Blast Pinos on Twitter"
                     />
                     <SocialLink
                         href="https://etherscan.io/address/0xdcf9bd5f26b58b82d4a8ec8fdf52069c7417c9c7"
                         icon={etherscanIcon}
-                        alt="Link to the Ether Fellas contract"
+                        alt="Link to the Blast Pinos contract"
                     />
                     <SocialLink
                         href="https://opensea.io/collection/ether-fellas"
                         icon={openseaIcon}
-                        alt="Link to Ether Fellas on OpenSea"
+                        alt="Link to Blast Pinos on OpenSea"
                     />
                 </div>
             </div>

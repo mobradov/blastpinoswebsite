@@ -1,89 +1,30 @@
 import Image from 'next/image';
 
-import sunsetArt from '../../../public/images/content/sunset_art.gif';
-import customShape from '../../../public/images/content/vectors/vector_1.svg';
 
-import fella1 from '../../../public/images/fellas/normal/1.png';
-import fella2 from '../../../public/images/fellas/normal/2.png';
-import fella3 from '../../../public/images/fellas/normal/3.png';
-import fella4 from '../../../public/images/fellas/normal/4.png';
-import fella5 from '../../../public/images/fellas/normal/5.png';
-import fella6 from '../../../public/images/fellas/normal/6.png';
-import fella7 from '../../../public/images/fellas/normal/7.png';
-import fella8 from '../../../public/images/fellas/normal/8.png';
-import fella9 from '../../../public/images/fellas/normal/9.png';
-import fella10 from '../../../public/images/fellas/normal/10.png';
-import fella11 from '../../../public/images/fellas/normal/11.png';
-import fella12 from '../../../public/images/fellas/normal/12.png';
-import fella13 from '../../../public/images/fellas/normal/13.png';
-import fella14 from '../../../public/images/fellas/normal/14.png';
-import fella15 from '../../../public/images/fellas/normal/15.png';
-import fella16 from '../../../public/images/fellas/normal/16.png';
-import fella17 from '../../../public/images/fellas/normal/17.png';
-import fella18 from '../../../public/images/fellas/normal/18.png';
-import fella19 from '../../../public/images/fellas/normal/19.png';
-import fella20 from '../../../public/images/fellas/normal/20.png';
-import fella21 from '../../../public/images/fellas/normal/21.png';
-import fella22 from '../../../public/images/fellas/normal/22.png';
-import fella23 from '../../../public/images/fellas/normal/23.png';
-import fella24 from '../../../public/images/fellas/normal/24.png';
-import fella25 from '../../../public/images/fellas/normal/25.png';
-import fella26 from '../../../public/images/fellas/normal/26.png';
-import fella27 from '../../../public/images/fellas/normal/27.png';
-import fella28 from '../../../public/images/fellas/normal/28.png';
-import fella29 from '../../../public/images/fellas/normal/29.png';
-import fella30 from '../../../public/images/fellas/normal/30.png';
-import fella31 from '../../../public/images/fellas/normal/31.png';
-import fella32 from '../../../public/images/fellas/normal/32.png';
-import fella33 from '../../../public/images/fellas/normal/33.png';
-import fella34 from '../../../public/images/fellas/normal/34.png';
-import fella35 from '../../../public/images/fellas/normal/35.png';
-import fella36 from '../../../public/images/fellas/normal/36.png';
-import fella37 from '../../../public/images/fellas/normal/37.png';
-import fella38 from '../../../public/images/fellas/normal/38.png';
-import fella39 from '../../../public/images/fellas/normal/39.png';
+import pino1 from '../../../public/images/pinos/normal/0b1425327843622a700385a353d3ce8e723510ce.png';
+import pino2 from '../../../public/images/pinos/normal/0bb3a6cc3fd7c7fd7af1593104d14993dfb74936.png';
+import pino3 from '../../../public/images/pinos/normal/0d96bbe7b6bb05ac0a4369b1207c2087309d7d53.png';
+import pino4 from '../../../public/images/pinos/normal/2d1dc17279068e397fd240357c6736bdc7aa1706.png';
+import pino5 from '../../../public/images/pinos/normal/5a1b7933f3835b9e9c6a42bf41947d1e5c2f4392.png';
+import pino6 from '../../../public/images/pinos/normal/5a2b2b1af5774df51551c9f74f875a2226c7f74a.png';
+import pino7 from '../../../public/images/pinos/normal/5eb2b56235682c7f6e269d66de221e8fa65abc00.png';
+import pino8 from '../../../public/images/pinos/normal/6a407bcf8a828615fb5f8daecdce7d787d0ff991.png';
+import pino9 from '../../../public/images/pinos/normal/8e911f570cdf5193b4f1eb6ac3b33d078721504a.png';
+import pino10 from '../../../public/images/pinos/normal/9bbd2cb98a6972d82cc64898858b2de342eeef7c.png';
+
 
 const FirstSection = () => {
-    const fellas = [
-        fella1,
-        fella2,
-        fella3,
-        fella4,
-        fella5,
-        fella6,
-        fella7,
-        fella8,
-        fella9,
-        fella10,
-        fella11,
-        fella12,
-        fella13,
-        fella14,
-        fella15,
-        fella16,
-        fella17,
-        fella18,
-        fella19,
-        fella20,
-        fella21,
-        fella22,
-        fella23,
-        fella24,
-        fella25,
-        fella26,
-        fella27,
-        fella28,
-        fella29,
-        fella30,
-        fella31,
-        fella32,
-        fella33,
-        fella34,
-        fella35,
-        fella36,
-        fella37,
-        fella38,
-        fella39,
+    const pinos = [
+        pino1,
+        pino2,
+        pino3,
+        pino4,
+        pino5,
+        pino6,
+        pino7,
+        pino8,
+        pino9,
+        pino10
     ];
 
     return (
@@ -91,62 +32,41 @@ const FirstSection = () => {
             <CheckeredBox position="top-0 right-0" />
             <CheckeredBox position="bottom-0 left-0" />
 
-            <section className="w-1/3 flex flex-col items-start space-y-4">
+            <section className="mr-24 w-1/3 flex flex-col items-start space-y-4 mt-20">
                 <div className="px-4 py-1.5 bg-darkish shadow-lg text-base font-light leading-6 font-kanit text-white flex justify-center items-center">
                     Welcome to the
                 </div>
-                <div className="mt-4 space-y-2">
-                    {['Based', 'Fellas', 'web', 'site'].map((word, i) => (
+                <div className="mt-2 space-y-2">
+                    {['Blast', 'Pinos', 'web', 'site'].map((word, i) => (
                         <div
                             key={i}
-                            className="font-righteous font-normal text-white text-[110px] leading-[110px] tracking-tighter flex-none"
+                            className="font-righteous font-normal text-blyellow text-[80px] leading-[80px] tracking-tighter flex-none"
                         >
                             {word}
                         </div>
                     ))}
                 </div>
             </section>
-            <section className="w-1/3">
-                <div className="h-[512px] w-full overflow-y-auto grid grid-cols-3 gap-2 hide-scrollbar big-shadow">
-                    {fellas
+            
+            <section className="w-2/3 mt-20 ml-20">
+                <div className="h-[400px] w-full overflow-y-auto grid grid-cols-3 gap-2 hide-scrollbar big-shadow">
+                    {pinos
                         .slice()
                         .reverse()
-                        .map((fella, index) => (
+                        .map((pinos, index) => (
                             <Image
                                 key={index}
-                                src={fella}
-                                alt={`Ether Fella ${index}`}
+                                src={pinos}
+                                alt={`Blast Pino ${index}`}
                                 className="w-[100px] h-[100px] object-cover object-center"
                                 loading="eager"
                             />
                         ))}
                 </div>
             </section>
+            
 
-            <section className="mt-8 px-8 w-1/3 relative ml-14">
-                <div className="w-[300px] h-[300px] relative">
-                    <img
-                        src="/images/content/sunset_art.gif"
-                        alt="Modified GIF"
-                        loading="eager"
-                        className="absolute top-0 left-0 w-full h-full object-cover transform rotate-[-2deg] scale-x-[-1]"
-                        style={{
-                            maskImage: `url(/images/content/vectors/vector_1.svg)`,
-                            maskRepeat: 'no-repeat',
-                            maskSize: 'cover',
-                            WebkitMaskImage: `url(/images/content/vectors/vector_1.svg)`,
-                            WebkitMaskRepeat: 'no-repeat',
-                            WebkitMaskSize: 'cover',
-                        }}
-                    />
-                </div>
-                <p className="mt-8 custom-paragraph">
-                    We are a 74x74 pixel art project dropping this August on the
-                    Base Layer 2 Chain. <br /> <br /> Explore a diverse range
-                    of traits and combinations matched together seamlessly to
-                    deliver the best Based Fellas possible.
-                </p>
-            </section>
+            
         </div>
     );
 };
@@ -154,10 +74,10 @@ const FirstSection = () => {
 const CheckeredBox = ({ position }) => (
     <div className={`${position} absolute w-16 h-16`}>
         <div className="flex flex-wrap w-full h-full">
-            <div className="w-1/2 h-1/2 bg-lightgray"></div>
+            <div className="w-1/2 h-1/2 bg-blyellow"></div>
             <div className="w-1/2 h-1/2"></div>
             <div className="w-1/2 h-1/2"></div>
-            <div className="w-1/2 h-1/2 bg-lightgray"></div>
+            <div className="w-1/2 h-1/2 bg-blyellow"></div>
         </div>
     </div>
 );

@@ -1,0 +1,15 @@
+{connected ? (
+                    <button
+                        onClick={mint} // Link mint button to the mint function
+                        className="font-righteous bg-purp text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105"
+                    >
+                        Mint
+                    </button>
+                ) : (
+                    <button
+                        onClick={connectWallet} // Link mint button to the connectWallet function
+                        className="font-righteous bg-purp text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105"
+                    >
+                        Connect Wallet
+                    </button>
+                )}

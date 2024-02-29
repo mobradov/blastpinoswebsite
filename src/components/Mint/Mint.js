@@ -1,11 +1,64 @@
-import galaxy from '../../../public/images/content/galaxy_art.gif';
+
+import puppetter from '../../../public/images/puppet.gif';
 
 import { useState } from 'react';
 import Image from 'next/image';
-
+const ethers = require('ethers');
+import abi2 from '../../NFTMarketplace.json';
 const Mint = () => {
     const [amount, setAmount] = useState(1); // Initial amount set to 1
+    const [connected, setConnected] = useState(false);
+  const [walletAddress, setWalletAddress] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
+  // Function to connect/disconnect the wallet
+  async function connectWallet() {
+    if (!connected) {
+      try {
+        // Check if there's already a request pending
+        const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+        if (accounts.length > 0) {
+          // If there are already accounts connected, set connected to true
+          setConnected(true);
+          setWalletAddress(accounts[0]);
+          return;
+        }
+  
+        // If there's no pending request, proceed to connect the wallet
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const _walletAddress = await signer.getAddress();
+        setConnected(true);
+        setWalletAddress(_walletAddress);
+      } catch (error) {
+        console.error('Error connecting to wallet:', error);
+      }
+    } else {
+      // Disconnect the wallet
+      window.ethereum.selectedAddress = null;
+      setConnected(false);
+      setWalletAddress("");
+    }
+  }
+
+  const mint = async () => {
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = provider.getSigner();
+      const contractAddress = '0x9Ec349681e01e041bd4532d010cB578505C0d186'; //'0xE980bAEc1130E967488510E2647643435D35AFF0'; // Your contract address
+      const contractABI = abi2; //abi; // Your contract ABI
+      const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+      // Call the mint function of your contract
+      const transaction = await contract.mint(1);
+      await transaction.wait();
+      
+      alert('NFT successfully minted!');
+    } catch (error) {
+      console.error('Error minting NFT:', error);
+    }
+  };
     const handleDecrement = () => {
         if (amount > 1) {
             setAmount(amount - 1);
@@ -78,13 +131,14 @@ const Mint = () => {
                 </div>
                 <button
                     onClick={() => alert('Mint not live!')}
-                    className="font-righteous bg-purp text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105"
+                    className="font-righteous bg-blyellow text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105 text-black"
                 >
                     Mint
                 </button>
+                
             </div>
             <div className="w-2/4 pr-18">
-                <Image src={galaxy} alt="Galaxy Art" className="big-shadow" />
+                <Image src={puppetter} alt="Galaxy Art" className="big-shadow" />
             </div>
         </section>
     );

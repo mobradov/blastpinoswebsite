@@ -12,6 +12,7 @@ module.exports = {
                 darkish: 'rgba(255,255,255,0.04)',
                 lightgray: 'rgba(255, 255, 255, 0.03)',
                 purp: '#AF63B8',
+                blyellow: '#eeee04',
             },
             boxShadow: {
                 'custom-light': '0 0 60px #313131',
