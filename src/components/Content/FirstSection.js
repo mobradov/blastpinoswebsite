@@ -1,16 +1,26 @@
 import Image from 'next/image';
+import pino1 from '../../../public/images/pinos/normal/blastpino1.png';
+import pino2 from '../../../public/images/pinos/normal/blastpino2.png';
+import pino3 from '../../../public/images/pinos/normal/blastpino3.png';
+import pino4 from '../../../public/images/pinos/normal/blastpino4.png';
+import pino5 from '../../../public/images/pinos/normal/blastpino5.png';
+import pino6 from '../../../public/images/pinos/normal/blastpino6.png';
+import pino7 from '../../../public/images/pinos/normal/blastpino7.png';
+import pino8 from '../../../public/images/pinos/normal/blastpino8.png';
+import pino9 from '../../../public/images/pinos/normal/blastpino9.png';
+import pino10 from '../../../public/images/pinos/normal/blastpino10.png';
+import pino12 from '../../../public/images/pinos/normal/blastpino12.png';
+import pino13 from '../../../public/images/pinos/normal/blastpino13.png';
+import pino15 from '../../../public/images/pinos/normal/blastpino15.png';
+import pino16 from '../../../public/images/pinos/normal/blastpino16.png';
+import pino20 from '../../../public/images/pinos/normal/blastpino20.png';
+import pino21 from '../../../public/images/pinos/normal/blastpino21.png';
+import pino22 from '../../../public/images/pinos/normal/blastpino22.png';
+import pino23 from '../../../public/images/pinos/normal/blastpino23.png';
+import pino24 from '../../../public/images/pinos/normal/blastpino24.png';
+import pino25 from '../../../public/images/pinos/normal/blastpino25.png';
+import pino26 from '../../../public/images/pinos/normal/blastpino26.png';
 
-
-import pino1 from '../../../public/images/pinos/normal/0b1425327843622a700385a353d3ce8e723510ce.png';
-import pino2 from '../../../public/images/pinos/normal/0bb3a6cc3fd7c7fd7af1593104d14993dfb74936.png';
-import pino3 from '../../../public/images/pinos/normal/0d96bbe7b6bb05ac0a4369b1207c2087309d7d53.png';
-import pino4 from '../../../public/images/pinos/normal/2d1dc17279068e397fd240357c6736bdc7aa1706.png';
-import pino5 from '../../../public/images/pinos/normal/5a1b7933f3835b9e9c6a42bf41947d1e5c2f4392.png';
-import pino6 from '../../../public/images/pinos/normal/5a2b2b1af5774df51551c9f74f875a2226c7f74a.png';
-import pino7 from '../../../public/images/pinos/normal/5eb2b56235682c7f6e269d66de221e8fa65abc00.png';
-import pino8 from '../../../public/images/pinos/normal/6a407bcf8a828615fb5f8daecdce7d787d0ff991.png';
-import pino9 from '../../../public/images/pinos/normal/8e911f570cdf5193b4f1eb6ac3b33d078721504a.png';
-import pino10 from '../../../public/images/pinos/normal/9bbd2cb98a6972d82cc64898858b2de342eeef7c.png';
 
 
 const FirstSection = () => {
@@ -24,7 +34,18 @@ const FirstSection = () => {
         pino7,
         pino8,
         pino9,
-        pino10
+        pino10,
+        pino12,
+        pino13,
+        pino15,
+        pino16,
+        pino20,
+        pino21,
+        pino22,
+        pino23,
+        pino24,
+        pino25,
+        pino26
     ];
 
     return (
@@ -32,11 +53,11 @@ const FirstSection = () => {
             <CheckeredBox position="top-0 right-0" />
             <CheckeredBox position="bottom-0 left-0" />
 
-            <section className="mr-24 w-1/3 flex flex-col items-start space-y-4 mt-20">
+            <section className="hidden md:flex mr-24 w-1/3 flex flex-col items-start space-y-4 mt-20">
                 <div className="px-4 py-1.5 bg-darkish shadow-lg text-base font-light leading-6 font-kanit text-white flex justify-center items-center">
                     Welcome to the
                 </div>
-                <div className="mt-2 space-y-2">
+                <div className="mt-2 space-y-2 ">
                     {['Blast', 'Pinos', 'web', 'site'].map((word, i) => (
                         <div
                             key={i}
@@ -48,7 +69,7 @@ const FirstSection = () => {
                 </div>
             </section>
             
-            <section className="w-2/3 mt-20 ml-20">
+            <section className="w-2/3 mt-20 ml-20 -z-50">
                 <div className="h-[400px] w-full overflow-y-auto grid grid-cols-3 gap-2 hide-scrollbar big-shadow">
                     {pinos
                         .slice()

@@ -11,9 +11,13 @@ export default function Home() {
         <Card>
             <Navbar />
             <FirstSection />
-            <SecondSection />           
+            <SecondSection />
             <Mint />
             <Footer />
         </Card>
     );
 }
+/*
+           
+            <Mint />
+           */

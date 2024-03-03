@@ -80,67 +80,72 @@ const Mint = () => {
     };
 
     return (
-        <section className="my-28 flex justify-between" id="mint">
-            <div className="flex flex-col w-2/4 gap-9">
-                <h1 className="custom-heading text-start">Mint</h1>
-                <p className="w-8/12 custom-paragraph">
-                    Welcome to the mint section, we will be stealth dropping
-                    Based Fellas, so you&apos;ll just have to wait around for
-                    these buttons below to be live
-                </p>
+        <section className="my-28 flex flex-col md:flex-row items-center justify-center md:justify-between" id="mint">
+    <div className="flex flex-col w-full md:gap-4">
+        <h1 className="custom-heading text-center md:text-center">Mint</h1>
+        <p className="w-full  custom-paragraph text-center md:text-center">
+            Welcome to our minting section, where creativity meets craftsmanship
+            to produce tokens of timeless value. Step into a realm where 
+            imagination knows no bounds and every design tells a unique story.
+        </p>
 
-                <div className="w-1/2 flex items-center justify-between">
-                    <div className="pr-8">
-                        <p className="custom-paragraph py-2">Amount</p>
-                        <div className="amount-handler bg-lightgray border border-white w-52 py-3 px-4 flex items-center">
-                            <div className="flex items-center">
-                                <button
-                                    onClick={handleDecrement}
-                                    className={`text-lg ${
-                                        amount === 1
-                                            ? 'text-gray-500'
-                                            : 'text-white'
-                                    }`}
-                                >
-                                    &lt;
-                                </button>
-                            </div>
-                            <div className="flex-1 flex justify-center">
-                                <p className="text-white text-lg">{amount}</p>
-                            </div>
-                            <div className="flex items-center">
-                                <button
-                                    onClick={handleIncrement}
-                                    className={`text-lg ${
-                                        amount === 10
-                                            ? 'text-gray-500'
-                                            : 'text-white'
-                                    }`}
-                                >
-                                    &gt;
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p className="custom-paragraph py-2">Price</p>
-                        <div className="bg-lightgray border border-white text-xl w-52 py-3 px-2 flex items-center justify-center">
-                            {calculatePrice()}
-                        </div>
-                    </div>
-                </div>
+       
+        <div className="w-full md:w-full flex flex-col md:flex-row items-center justify-center md:justify-between">
+    <div className="md:pr-0 md:w-full md:ml-96">
+        <p className="custom-paragraph py-2 text-center md:text-start mb-2">Amount</p>
+        <div className="amount-handler bg-lightgray border border-white w-full md:w-52 py-3 px-4 flex items-center justify-center md:justify-between">
+            <div className="flex items-center">
                 <button
-                    onClick={() => alert('Mint not live!')}
-                    className="font-righteous bg-blyellow text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105 text-black"
+                    onClick={handleDecrement}
+                    className={`text-lg ${
+                        amount === 1
+                            ? 'text-gray-500'
+                            : 'text-white'
+                    }`}
                 >
-                    Mint
+                    &lt;
                 </button>
-                
             </div>
-            <div className="w-2/4 pr-18">
-                <Image src={puppetter} alt="Galaxy Art" className="big-shadow" />
+            <div className="flex-1 flex justify-center">
+                <p className="text-white text-lg">{amount}</p>
             </div>
-        </section>
+            <div className="flex items-center">
+                <button
+                    onClick={handleIncrement}
+                    className={`text-lg ${
+                        amount === 10
+                            ? 'text-gray-500'
+                            : 'text-white'
+                    }`}
+                >
+                    &gt;
+                </button>
+            </div>
+        </div>
+    </div>
+    <div className="mt-6 md:mt-0 md:mr-96">
+        <p className="custom-paragraph py-2 text-center md:text-start">Price</p>
+        <div className="bg-lightgray border border-white text-xl w-full md:w-52 py-3 px-2 flex items-center justify-center">
+            {calculatePrice()}
+        </div>
+    </div>
+</div>
+
+   
+
+
+        <button
+            onClick={() => alert('Mint not live!')}
+            className="mx-auto mt-8 font-righteous bg-blyellow text-base uppercase w-44 h-12 tracking-wider transition duration-200 hover:scale-105 text-black self-center md:self-start"
+        >
+            Mint
+        </button>
+    </div>
+    
+
+
+</section>
+
     );
 };
 

@@ -12,12 +12,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center pt-5 my-8 sm:w-full">
             <hr className="border-t border-white w-full my-4" />
             <div className="flex items-center gap-4 text-xl sm:text-lg font-normal uppercase tracking-widest font-righteous">
-                <span>
-                    <Image src={headerIcon} alt="Logo" />
-                </span>
+               
                 Blast Pinos
             </div>
-            <div className="flex items-center gap-8">
+            <div className="hidden sm:flex items-center gap-8">
                 <div className="flex gap-4">
                 <SocialLink
                         href="https://twitter.com/BlastPinosNFT"
