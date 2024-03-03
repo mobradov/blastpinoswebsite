@@ -12,17 +12,18 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  return (
-    <div className='flex justify-between items-center h-24 w-full mx-auto px-4 text-white'>
-      <h1 className='mr-20 w-full text-3xl font-bold text-blyellow'>Blast Pinos</h1>
-      <ul className='hidden md:flex gap-4'>
-      <li className='pt-8'> <Link
+/*nachträglich in ul 
+<li className='pt-8'> <Link
                         href="https://twitter.com/BlastPinosNFT">Twitter</Link></li>
           <li className='pt-8'><Link
                         href="https://etherscan.io/address/0xdcf9bd5f26b58b82d4a8ec8fdf52069c7417c9c7">Blastscan</Link></li>
           <li className='pt-8'> <Link
-                        href="https://opensea.io/collection/ether-fellas">Elemental</Link></li>
+                        href="https://opensea.io/collection/ether-fellas">Elemental</Link></li> */
+  return (
+    <div className='flex justify-between items-center h-24 w-full mx-auto px-4 text-white'>
+      <h1 className='mr-20 w-full text-3xl font-bold text-blyellow'>Blast Pinos</h1>
+      <ul className='hidden md:flex gap-4'>
+      
         <li className='p-4'><button
                         className="w-32 h-12 bg-blyellow uppercase tracking-wider font-righteous text-base small-shadow text-black"
                         onClick={() => {
@@ -43,16 +44,17 @@ const Navbar = () => {
         <h1 className='w-full text-3xl font-bold text-bl-yellow m-4'>BlastPinos</h1>
           <li className='p-4 border-b border-gray-600'> <Link
                         href="https://twitter.com/BlastPinosNFT">Twitter</Link></li>
-          <li className='p-4 border-b border-gray-600'><Link
-                        href="https://etherscan.io/address/0xdcf9bd5f26b58b82d4a8ec8fdf52069c7417c9c7">Blastscan</Link></li>
-          <li className='p-4 border-b border-gray-600'> <Link
-                        href="https://opensea.io/collection/ether-fellas">Elemental</Link></li>
+          
       </ul>
      
     </div>
     );
 };
-
+/* nachträglich in ul
+<li className='p-4 border-b border-gray-600'><Link
+                        href="https://etherscan.io/address/0xdcf9bd5f26b58b82d4a8ec8fdf52069c7417c9c7">Blastscan</Link></li>
+          <li className='p-4 border-b border-gray-600'> <Link
+                        href="https://opensea.io/collection/ether-fellas">Elemental</Link></li>*/
 export default Navbar;
 
 

@@ -22,7 +22,16 @@ const Footer = () => {
                         icon={twitterIcon}
                         alt="Link to Blast Pinos on Twitter"
                     />
-                    <SocialLink
+                    
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Footer;
+/*nachtträglich zurücktun
+<SocialLink
                         href="https://etherscan.io/address/0xdcf9bd5f26b58b82d4a8ec8fdf52069c7417c9c7"
                         icon={etherscanIcon}
                         alt="Link to the Blast Pinos contract"
@@ -32,10 +41,4 @@ const Footer = () => {
                         icon={openseaIcon}
                         alt="Link to Blast Pinos on OpenSea"
                     />
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default Footer;
+                    */
